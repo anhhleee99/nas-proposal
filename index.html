@@ -96,7 +96,6 @@
       <li><strong>機器の経年劣化と故障リスク：</strong>2017年の購入から約9年が経過（設計は2014年ベース）。推奨耐用年数を大幅に過ぎており、突然の物理故障によるデータ消失リスクを抱えている。</li>
       <li><strong>バックアップ未設定の現状：</strong>現在、外部HDDやクラウドへの自動バックアップ設定を一切行っておらず、本体故障時にデータを復旧する手段がないことが最大の懸念点。</li>
       <li><strong>利用状況と将来的な安全性：</strong>社内での利用頻度が低いため、9年間の使用量は約271GBに留まっている。現状で容量不足はないが、今後のデータ増加や安全性を考え、Dropbox連携等のクラウドバックアップの導入を検討・検証する必要がある。</li>
-      <li><strong>性能不足：</strong>CPU（800MHz/1コア）・メモリ（256MB）が極めて低性能。Dropbox同期処理中のフリーズが頻発。</li>
     </ul>
   </div>
 
@@ -130,12 +129,14 @@
     <div class="card-header">案1：Synology DS223j（最推奨）<span class="badge">★ 推奨</span></div>
     <div class="card-body">
       <table class="info-table">
-        <tr><th>総予算</th><td>約 46,000〜56,000円（本体 36,000円 ＋ HDD 1TB×2基 10,000〜20,000円）</td></tr>
+        <tr><th>総予算</th><td>約 56,000〜60,800円（本体 36,000円 ＋ HDD 1TB×2基 20,000〜24,800円）</td></tr>
         <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（1.7GHz/4コア）/ 1GB DDR4 ― 現行機の<strong>約4倍</strong></td></tr>
         <tr><th>インターフェース</th><td>1Gbps LAN / USB 3.2 Gen1 ×2</td></tr>
         <tr><th>RAID構成</th><td>RAID 1（ミラーリング）― 2基に同じデータを同時保存。1基故障でも業務継続可能</td></tr>
         <tr><th>Dropbox連携</th><td><strong>Cloud Sync搭載 ― 同期エラーほぼ皆無、完全自動化</strong></td></tr>
         <tr><th>発売時期 / 保証</th><td>2023年〜（最新モデル）/ メーカー2年保証</td></tr>
+        <tr><th>HDD参考価格</th><td>NAS専用HDD 1TB：約10,000〜12,400円/1基（※整備済み品なら約5,000円/1基）<br>
+          <small style="color:#666;">参考：<a href="https://item.rakuten.co.jp/novaflux/dt-hdd-35-wd-red/" target="_blank" style="color:#2c3e50;">楽天（WD Red）</a>｜<a href="https://www.amazon.co.jp/Western-Digital-3-5%E3%82%A4%E3%83%B3%E3%83%81-WD10EFRX-EC-%E3%80%90%E5%9B%BD%E5%86%85%E6%AD%A3%E8%A6%8F%E4%BB%A3%E7%90%86%E5%BA%97%E5%93%81%E3%80%91/dp/B08HCN9NCF/" target="_blank" style="color:#2c3e50;">Amazon（WD Red 1TB）</a></small></td></tr>
       </table>
       <div class="md-box merit-box">
         <h4>メリット</h4>
@@ -155,7 +156,7 @@
         </ul>
       </div>
       <div class="personal-opinion">
-        <strong>個人的な所見：</strong>クラウド連携・長期安定運用・管理のしやすさを総合すると、弊社の業務環境に最も適合するモデルと判断。初期費用は案3より約1.1万円高いが、10年単位で考えれば十分に回収可能。特に、データ同期処理の安定性は業務効率に直結するため、この差額は妥当な投資。
+        <strong>個人的な所見：</strong>クラウド連携・長期安定運用・管理のしやすさを総合すると、弊社の業務環境に最も適合するモデルと判断。初期費用は案3より約2万円高いが、10年単位で考えれば十分に回収可能。特に、データ同期処理の安定性は業務効率に直結するため、この差額は妥当な投資。※整備済みHDDを使えばさらに約1.5万円のコスト削減が可能。
       </div>
     </div>
   </div>
@@ -165,7 +166,7 @@
     <div class="card-header">案2：ASUSTOR AS1202T<span class="badge">準推奨</span></div>
     <div class="card-body">
       <table class="info-table">
-        <tr><th>総予算</th><td>約 42,000〜52,000円（本体 32,000円 ＋ HDD 1TB×2基 10,000〜20,000円）</td></tr>
+        <tr><th>総予算</th><td>約 52,000〜56,800円（本体 32,000円 ＋ HDD 1TB×2基 20,000〜24,800円）</td></tr>
         <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（1.7GHz/4コア）/ 1GB DDR4</td></tr>
         <tr><th>インターフェース</th><td>2.5Gbps LAN / USB 3.2 ×2</td></tr>
         <tr><th>RAID構成</th><td>RAID 1（ミラーリング）― 1基故障でもデータは安全</td></tr>
@@ -290,7 +291,7 @@
     </thead>
     <tbody>
       <tr><td><strong>カテゴリ</strong></td><td class="highlight">クラウド対応</td><td class="highlight">クラウド対応</td><td>クラウド非対応</td><td>クラウド非対応</td></tr>
-      <tr><td><strong>総予算</strong></td><td>約46,000〜56,000円</td><td>約42,000〜52,000円</td><td>約34,800円</td><td>約44,880円</td></tr>
+      <tr><td><strong>総予算</strong></td><td>約56,000〜60,800円</td><td>約52,000〜56,800円</td><td>約34,800円</td><td>約44,880円</td></tr>
       <tr><td><strong>月額費用</strong></td><td>0円</td><td>0円</td><td>0円</td><td>0円</td></tr>
       <tr><td><strong>RAID 1</strong></td><td class="highlight">◎ 対応</td><td class="highlight">◎ 対応</td><td>○ 対応</td><td>○ 対応</td></tr>
       <tr><td><strong>Dropbox連携</strong></td><td class="highlight">◎ 非常に安定</td><td class="highlight">○ 安定</td><td>✗ 不安定</td><td>△ 不安定</td></tr>
