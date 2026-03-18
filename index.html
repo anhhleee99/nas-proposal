@@ -15,474 +15,135 @@
     background: #fff;
     padding: 30px 50px;
   }
-
-  /* ── Header ── */
-  .header {
-    text-align: center;
-    border-bottom: 3px solid #2c3e50;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-  }
-  .header h1 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #2c3e50;
-    letter-spacing: 4px;
-    margin-bottom: 6px;
-  }
-  .header .subtitle {
-    font-size: 16px;
-    color: #555;
-  }
-  .header .date {
-    font-size: 14px;
-    color: #888;
-    margin-top: 8px;
-  }
-
-  /* ── Section ── */
-  .section {
-    margin-bottom: 28px;
-  }
-  .section-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #2c3e50;
-    border-left: 5px solid #2c3e50;
-    padding-left: 12px;
-    margin-bottom: 14px;
-  }
-  .section-desc {
-    margin-bottom: 12px;
-    color: #444;
-    font-size: 15px;
-  }
-
-  /* ── My Opinion Box ── */
-  .opinion-box {
-    border: 2px solid #2c3e50;
-    border-radius: 8px;
-    padding: 20px 24px;
-    margin-bottom: 24px;
-    background: #f7fafc;
-  }
-  .opinion-box h3 {
-    font-size: 18px;
-    color: #2c3e50;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #2c3e50;
-    padding-bottom: 8px;
-  }
-  .opinion-box .point {
-    margin-bottom: 10px;
-    padding-left: 16px;
-    position: relative;
-    font-size: 15px;
-  }
-  .opinion-box .point::before {
-    content: "■";
-    position: absolute;
-    left: 0;
-    color: #2c3e50;
-    font-size: 10px;
-    top: 3px;
-  }
-  .opinion-box .point strong { color: #1a3a5c; }
-  .opinion-box .conclusion-line {
-    margin-top: 14px;
-    padding: 10px 14px;
-    background: #e8f0fe;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #1a3a5c;
-  }
-
-  /* ── Current status ── */
-  .status-box {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 16px 20px;
-    margin-bottom: 18px;
-  }
-  .status-box h3 {
-    font-size: 16px;
-    color: #c0392b;
-    margin-bottom: 8px;
-  }
-  .status-box ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .status-box li {
-    padding: 3px 0;
-    padding-left: 18px;
-    position: relative;
-  }
-  .status-box li::before {
-    content: "▸";
-    position: absolute;
-    left: 0;
-    color: #c0392b;
-  }
-
-  /* ── Proposal cards ── */
-  .proposal-group-title {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 16px;
-  }
+  .header { text-align: center; border-bottom: 3px solid #2c3e50; padding-bottom: 20px; margin-bottom: 25px; }
+  .header h1 { font-size: 30px; font-weight: 700; color: #2c3e50; letter-spacing: 4px; margin-bottom: 6px; }
+  .header .subtitle { font-size: 16px; color: #555; }
+  .header .date { font-size: 14px; color: #888; margin-top: 8px; }
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 20px; font-weight: 700; color: #2c3e50; border-left: 5px solid #2c3e50; padding-left: 12px; margin-bottom: 14px; }
+  .section-desc { margin-bottom: 12px; color: #444; font-size: 15px; }
+  .status-box { background: #f8f8f8; border: 1px solid #ddd; border-radius: 6px; padding: 16px 20px; margin-bottom: 18px; }
+  .status-box h3 { font-size: 16px; color: #c0392b; margin-bottom: 8px; }
+  .status-box ul { list-style: none; padding-left: 0; }
+  .status-box li { padding: 4px 0; padding-left: 18px; position: relative; }
+  .status-box li::before { content: "▸"; position: absolute; left: 0; color: #c0392b; }
+  .proposal-group-title { font-size: 18px; font-weight: 700; text-align: center; padding: 10px; border-radius: 6px; margin-bottom: 16px; }
   .group-cloud { background: #eaf2f8; color: #2c3e50; border: 1px solid #b0c4de; }
   .group-nocloud { background: #f5f0e8; color: #5d4e37; border: 1px solid #d4c5a9; }
-
-  .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 18px;
-    overflow: hidden;
-  }
-  .card-header {
-    padding: 14px 20px;
-    font-size: 17px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .card-header .badge {
-    font-size: 13px;
-    padding: 3px 10px;
-    border-radius: 12px;
-    font-weight: 600;
-  }
+  .card { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 18px; overflow: hidden; }
+  .card-header { padding: 14px 20px; font-size: 17px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+  .card-header .badge { font-size: 13px; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
   .card.cloud .card-header { background: #d6e9f8; color: #1a3a5c; }
   .card.cloud .badge { background: #2c3e50; color: #fff; }
   .card.nocloud .card-header { background: #ede7d9; color: #5d4e37; }
   .card.nocloud .badge { background: #8b7355; color: #fff; }
-
-  .card-body {
-    padding: 16px 18px;
-  }
-
-  /* ── Info table ── */
-  .info-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 14px;
-    font-size: 14px;
-  }
-  .info-table th {
-    background: #f4f4f4;
-    text-align: left;
-    padding: 7px 12px;
-    width: 130px;
-    border: 1px solid #e0e0e0;
-    font-weight: 600;
-    color: #333;
-  }
-  .info-table td {
-    padding: 7px 12px;
-    border: 1px solid #e0e0e0;
-  }
-
-  /* ── Merit / Demerit ── */
-  .md-box {
-    border-radius: 6px;
-    padding: 12px 16px;
-    margin-bottom: 10px;
-  }
+  .card-body { padding: 16px 18px; }
+  .info-table { width: 100%; border-collapse: collapse; margin-bottom: 14px; font-size: 14px; }
+  .info-table th { background: #f4f4f4; text-align: left; padding: 8px 12px; width: 140px; border: 1px solid #e0e0e0; font-weight: 600; color: #333; }
+  .info-table td { padding: 8px 12px; border: 1px solid #e0e0e0; }
+  .md-box { border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; }
   .merit-box { background: #f0f7f0; border-left: 4px solid #27ae60; }
   .demerit-box { background: #fdf2f2; border-left: 4px solid #c0392b; }
-  .md-box h4 {
-    font-size: 15px;
-    margin-bottom: 6px;
-  }
+  .md-box h4 { font-size: 15px; margin-bottom: 6px; }
   .merit-box h4 { color: #27ae60; }
   .demerit-box h4 { color: #c0392b; }
-  .md-box ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .md-box li {
-    padding: 3px 0;
-    padding-left: 16px;
-    position: relative;
-    font-size: 14px;
-  }
+  .md-box ul { list-style: none; padding-left: 0; }
+  .md-box li { padding: 3px 0; padding-left: 16px; position: relative; font-size: 14px; }
   .merit-box li::before { content: "✓"; position: absolute; left: 0; color: #27ae60; font-weight: 700; }
   .demerit-box li::before { content: "✗"; position: absolute; left: 0; color: #c0392b; font-weight: 700; }
-
-  /* ── Reason box (dual) ── */
-  .reason-box {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    padding: 12px 18px;
-    margin-top: 8px;
-    font-size: 14px;
-  }
-  .reason-box strong {
-    color: #2c3e50;
-  }
-  .reason-dual {
-    display: flex;
-    gap: 12px;
-    margin-top: 8px;
-  }
-  .reason-dual .reason-item {
-    flex: 1;
-    border-radius: 6px;
-    padding: 12px 16px;
-    font-size: 14px;
-  }
-  .reason-fit {
-    background: #f0f7f0;
-    border: 1px solid #b8d8b8;
-  }
-  .reason-fit strong { color: #27ae60; }
-  .reason-unfit {
-    background: #fdf2f2;
-    border: 1px solid #e8c4c4;
-  }
-  .reason-unfit strong { color: #c0392b; }
-
-  /* ── Personal opinion (compatibility) ── */
-  .personal-opinion {
-    background: #f7fafc;
-    border: 1px solid #c0d0e0;
-    border-left: 4px solid #2c3e50;
-    border-radius: 6px;
-    padding: 12px 18px;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-  }
+  .personal-opinion { background: #f7fafc; border: 1px solid #c0d0e0; border-left: 4px solid #2c3e50; border-radius: 6px; padding: 12px 18px; margin-top: 10px; font-size: 14px; color: #333; }
   .personal-opinion strong { color: #2c3e50; }
-
-  /* ── Comparison table ── */
-  .compare-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    font-size: 14px;
-  }
-  .compare-table th, .compare-table td {
-    border: 1px solid #d0d0d0;
-    padding: 8px 12px;
-    text-align: center;
-  }
-  .compare-table thead th {
-    background: #2c3e50;
-    color: #fff;
-    font-weight: 600;
-  }
+  .reason-box { background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 18px; margin-top: 8px; font-size: 14px; }
+  .reason-box strong { color: #2c3e50; }
+  .compare-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  .compare-table th, .compare-table td { border: 1px solid #d0d0d0; padding: 8px 12px; text-align: center; }
+  .compare-table thead th { background: #2c3e50; color: #fff; font-weight: 600; }
   .compare-table tbody tr:nth-child(even) { background: #fafafa; }
   .compare-table .highlight { background: #eaf2f8; font-weight: 600; }
-
-  /* ── Recommendation ── */
-  .recommend-box {
-    border: 2px solid #2c3e50;
-    border-radius: 8px;
-    padding: 18px 22px;
-    margin-top: 20px;
-    background: #f7fafc;
-  }
-  .recommend-box h3 {
-    font-size: 18px;
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  .recommend-box ol {
-    padding-left: 20px;
-  }
-  .recommend-box li {
-    padding: 4px 0;
-    font-size: 15px;
-  }
-
-  /* ── Backup plan ── */
-  .backup-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-    margin-bottom: 14px;
-  }
-  .backup-table th, .backup-table td {
-    border: 1px solid #d0d0d0;
-    padding: 8px 12px;
-  }
-  .backup-table thead th {
-    background: #34495e;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-  }
+  .backup-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 14px; }
+  .backup-table th, .backup-table td { border: 1px solid #d0d0d0; padding: 8px 12px; }
+  .backup-table thead th { background: #34495e; color: #fff; font-weight: 600; text-align: center; }
   .backup-table td:first-child { font-weight: 600; }
-
-  /* ── Schedule ── */
-  .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-  .schedule-table th, .schedule-table td {
-    border: 1px solid #d0d0d0;
-    padding: 8px 12px;
-  }
-  .schedule-table thead th {
-    background: #2c3e50;
-    color: #fff;
-    text-align: center;
-  }
-
-  /* ── Page break ── */
+  .schedule-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .schedule-table th, .schedule-table td { border: 1px solid #d0d0d0; padding: 8px 12px; }
+  .schedule-table thead th { background: #2c3e50; color: #fff; text-align: center; }
+  .opinion-box { border: 2px solid #2c3e50; border-radius: 8px; padding: 20px 24px; margin-bottom: 24px; background: #f7fafc; }
+  .opinion-box h3 { font-size: 18px; color: #2c3e50; margin-bottom: 12px; border-bottom: 2px solid #2c3e50; padding-bottom: 8px; }
+  .opinion-box .point { margin-bottom: 10px; padding-left: 16px; position: relative; font-size: 15px; }
+  .opinion-box .point::before { content: "■"; position: absolute; left: 0; color: #2c3e50; font-size: 10px; top: 5px; }
+  .opinion-box .point strong { color: #1a3a5c; }
+  .opinion-box .conclusion-line { margin-top: 14px; padding: 10px 14px; background: #e8f0fe; border-radius: 5px; font-size: 15px; font-weight: 600; color: #1a3a5c; }
   .page-break { page-break-before: always; }
-
-  /* ── Footer ── */
-  .footer {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px solid #ddd;
-    font-size: 13px;
-    color: #999;
-  }
-
-  /* ── Print ── */
-  @media print {
-    body { padding: 0; font-size: 11px; }
-    .page-break { page-break-before: always; }
-  }
+  .footer { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; font-size: 13px; color: #999; }
+  @media print { body { padding: 0; font-size: 12px; } .page-break { page-break-before: always; } }
 </style>
 </head>
 <body>
 
-<!-- =============================== HEADER =============================== -->
+<!-- HEADER -->
 <div class="header">
   <h1>NAS機器更新 提案書</h1>
   <div class="subtitle">社内ファイルサーバー（NAS）のリプレースに関するご提案</div>
   <div class="date">提出日：2026年3月18日　｜　作成者：レアントアン</div>
 </div>
 
-<!-- ========================= 担当者の見解（冒頭） ========================= -->
-<div class="section">
-  <div class="section-title">個人的見解 ― Synology DS223j を推奨する理由</div>
-  <div class="opinion-box">
-    <h3>結論：Synology DS223j（案1）の導入を推奨</h3>
-
-    <ol style="padding-left:20px; margin-bottom:16px;">
-      <li style="padding:4px 0;"><strong>老朽化による業務停止リスクの解消</strong><br>
-        現行機は導入から12年が経過し、耐用年数を大幅に超過。DS223jへの刷新で処理能力を4倍に向上させ、フリーズ・遅延を根本から解消。</li>
-      <li style="padding:4px 0;"><strong>クラウド連携への将来対応力</strong><br>
-        Synology独自のCloud Syncにより、Dropboxとの同期を完全自動化可能。現時点で使わなくても、将来必要になった時にソフトウェア追加だけで対応できる。</li>
-      <li style="padding:4px 0;"><strong>旧NASの有効活用による二重のデータ保護</strong><br>
-        旧NASを廃棄せず「バックアップ専用機」として再利用。追加費用0円で、新NASのデータを毎日自動バックアップし、故障時の即時復旧を実現。</li>
-      <li style="padding:4px 0;"><strong>「安い旧世代を買って数年後に再購入」を避ける</strong><br>
-        過去9年間の使用量は271GBと少ないが、今後の事業変化は予測できない。旧世代の安価モデルでは数年で再購入のリスクがある。DS223jなら一度の投資で10年以上の安定運用が可能。</li>
-      <li style="padding:4px 0;"><strong>自社構築による圧倒的コストパフォーマンス</strong><br>
-        本体とHDDを別々に購入し、担当者が初期設定を行うことで業者委託費を削減。まずは「プランA（月額0円）」で構築し、必要に応じてクラウド連携を追加可能。</li>
-    </ol>
-
-    <div style="border-top:1px solid #ddd; padding-top:12px; margin-top:8px;">
-      <div style="font-size:13px; font-weight:600; color:#1a3a5c; margin-bottom:10px;">上記結論に至った背景：</div>
-    </div>
-
-    <div class="point">
-      <strong>「中期的な視点」でのコスト最適化：</strong>
-      安価な旧世代モデル（Buffalo LS220D 等）は確かに初期費用が約1万円安いですが、設計が2014年ベースであり、数年以内に再び老朽化・故障のリスクが高まります。
-      結果として<strong>「短期間で再度NASを購入する」</strong>可能性が高く、トータルコストはむしろ割高になります。
-      DS223jは2023年発売の最新世代であり、今後10年以上の安定稼働が見込めるため、<strong>一度の投資で長期的なコストを抑えられます。</strong>
-    </div>
-
-    <div class="point">
-      <strong>保守・保証の容易さ：</strong>
-      Synologyは世界シェアNo.1のNASメーカーであり、日本語サポート・情報量・ユーザーコミュニティが圧倒的に充実しています。
-      万一のトラブル時にも自力で解決しやすく、保証対応もスムーズです。
-      一方、旧世代Buffaloモデルは保証期間が1年と短く、生産終了に伴い<strong>部品・修理対応が困難になるリスク</strong>があります。
-    </div>
-
-    <div class="point">
-      <strong>将来の拡張性とクラウド対応：</strong>
-      DS223jは Synology独自の「Cloud Sync」により、Dropboxとの完全自動同期が可能です。
-      現時点でクラウドを使わなくても、<strong>将来的に必要になった時にソフトウェアの追加だけで対応できる</strong>柔軟性があります。
-      Buffalo機ではこの選択肢自体がありません。
-    </div>
-
-    <div class="point">
-      <strong>「使用量が少ないから不要」ではない理由：</strong>
-      過去9年間の使用量は271GBと少なく、一見すると現行機でも十分に思えます。
-      しかし、今後の事業拡大・人員増加・データの多様化（写真・動画・設計データ等）によって使用量が急増する可能性は十分にあります。
-      <strong>旧世代の安価なモデルを購入した場合、容量・性能不足で数年後に再購入が必要になる</strong>リスクがあります。
-      DS223jであれば、現行の余裕ある構成で長期間対応でき、仮に容量が不足してもHDDの換装だけで拡張可能です。
-    </div>
-
-    <div class="conclusion-line">
-      以上の理由から、目先の数千円〜1万円の差額よりも、「10年間安心して使える信頼性」「保守のしやすさ」「クラウド連携への将来対応力」を重視し、Synology DS223j への投資を強く推奨いたします。
-      <br><br>
-      ※今回の提案の主目的は、単なる「容量の拡大」ではありません。<strong>「老朽化による故障リスクの回避」</strong>と<strong>「8名体制での業務スピード改善」</strong>を、最小限の投資で実現することにあります。
-    </div>
-  </div>
-</div>
-
-<!-- ========================= 1. 現状の問題点 ========================= -->
+<!-- 1. 現状の問題点 -->
 <div class="section">
   <div class="section-title">1. 現状の問題点</div>
   <div class="status-box">
-    <h3>現行機：Buffalo LS220D0202C（2014年導入・稼働約12年）</h3>
+    <h3>現行機：Buffalo LS220D0202C（2014年モデル／2017年購入・使用開始）</h3>
     <ul>
-      <li><strong>老朽化：</strong>導入から12年が経過し、ハードウェアの耐用年数を大幅に超過。突然の故障による業務停止リスクが非常に高い。</li>
-      <li><strong>性能不足：</strong>CPU（800MHz/1コア）・メモリ（256MB）が極めて低性能。8名同時アクセス時にフリーズ・遅延が頻発。</li>
-      <li><strong>Dropbox連携の不安定：</strong>同期エラーが頻発し、クラウドバックアップとして機能していない。</li>
-      <li><strong>容量：</strong>実効容量 約0.9TB（RAID 1）。2017年〜現在の使用量は271GB。</li>
+      <li><strong>機器の経年劣化と故障リスク：</strong>2017年の購入から約9年が経過（設計は2014年ベース）。推奨耐用年数を大幅に過ぎており、突然の物理故障によるデータ消失リスクを抱えている。</li>
+      <li><strong>バックアップ未設定の現状：</strong>現在、外部HDDやクラウドへの自動バックアップ設定を一切行っておらず、本体故障時にデータを復旧する手段がないことが最大の懸念点。</li>
+      <li><strong>利用状況と将来的な安全性：</strong>社内での利用頻度が低いため、9年間の使用量は約271GBに留まっている。現状で容量不足はないが、今後のデータ増加や安全性を考え、Dropbox連携等のクラウドバックアップの導入を検討・検証する必要がある。</li>
+      <li><strong>性能不足：</strong>CPU（800MHz/1コア）・メモリ（256MB）が極めて低性能。Dropbox同期処理中のフリーズが頻発。</li>
     </ul>
   </div>
+
+  <table class="info-table" style="margin-top:10px;">
+    <tr><th>モデル名</th><td>LS220D0202C</td></tr>
+    <tr><th>最大容量</th><td>2.0 TB（1TB×2）｜ 実効容量 約0.9TB（RAID 1）</td></tr>
+    <tr><th>CPU / メモリ</th><td>Marvell Armada 370（800MHz/1コア）/ 256MB DDR3</td></tr>
+    <tr><th>インターフェース</th><td>LAN 1Gbps / USB 2.0 ×1</td></tr>
+    <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">不安定 ― 同期エラーが頻発し、バックアップとして機能していない</span></td></tr>
+    <tr><th>使用量（9年間）</th><td>約271GB</td></tr>
+  </table>
 </div>
 
-<!-- ========================= 2. 提案の概要 ========================= -->
+<!-- 2. 提案概要 -->
 <div class="section">
   <div class="section-title">2. 提案概要 ― 2つの方向性</div>
   <p class="section-desc">
     NASの選定にあたり、<strong>「クラウド連携の有無」</strong>を基準に2つのカテゴリに分類しました。<br>
-    それぞれのカテゴリには適した利用シーンがあります。業務の安定性・将来性・コストの観点から、各方向性のメリット・デメリットを整理いたします。
+    いずれもRAID 1（ミラーリング）構成でデータの二重保護を確保します。
   </p>
 </div>
 
-<!-- ======================================================================= -->
-<!-- ============= カテゴリA：クラウド連携対応モデル ============= -->
-<!-- ======================================================================= -->
+<!-- カテゴリA：クラウド連携対応モデル -->
 <div class="section">
   <div class="proposal-group-title group-cloud">
     【カテゴリA】クラウド連携対応モデル ― Dropboxとの安定同期が可能
   </div>
 
-  <!-- ── 案1: Synology DS223j ── -->
+  <!-- 案1: Synology DS223j -->
   <div class="card cloud">
-    <div class="card-header">
-      案1：Synology DS223j（最推奨）
-      <span class="badge">★ 推奨</span>
-    </div>
+    <div class="card-header">案1：Synology DS223j（最推奨）<span class="badge">★ 推奨</span></div>
     <div class="card-body">
       <table class="info-table">
-        <tr><th>総予算</th><td>約 46,000円（本体 36,000円 ＋ HDD 1TB×2基 10,000円）</td></tr>
-        <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（4コア） / 1GB DDR4 ― 現行機の<strong>4倍</strong>の処理能力</td></tr>
+        <tr><th>総予算</th><td>約 46,000〜56,000円（本体 36,000円 ＋ HDD 1TB×2基 10,000〜20,000円）</td></tr>
+        <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（1.7GHz/4コア）/ 1GB DDR4 ― 現行機の<strong>約4倍</strong></td></tr>
         <tr><th>インターフェース</th><td>1Gbps LAN / USB 3.2 Gen1 ×2</td></tr>
+        <tr><th>RAID構成</th><td>RAID 1（ミラーリング）― 2基に同じデータを同時保存。1基故障でも業務継続可能</td></tr>
         <tr><th>Dropbox連携</th><td><strong>Cloud Sync搭載 ― 同期エラーほぼ皆無、完全自動化</strong></td></tr>
-        <tr><th>発売時期</th><td>2023年〜（最新モデル）</td></tr>
-        <tr><th>メーカー保証</th><td>2年</td></tr>
+        <tr><th>発売時期 / 保証</th><td>2023年〜（最新モデル）/ メーカー2年保証</td></tr>
       </table>
-
       <div class="md-box merit-box">
         <h4>メリット</h4>
         <ul>
-          <li>Dropbox連携（Cloud Sync）が非常に強力。同期エラーがほぼ皆無で、クラウドを活用した安全なバックアップ体制を構築可能。</li>
-          <li>操作画面（DSM）が直感的で、PCに詳しくなくても管理が容易。スマホアプリからのアクセスも快適。</li>
-          <li>10年間の長期稼働を見越した高い耐久性とメーカーサポート。将来的なOSアップデートも継続提供。</li>
-          <li>8名同時アクセスでもフリーズ・遅延が発生しない高性能CPUとメモリを搭載。</li>
-          <li>10名以上の同時アクセスにも余裕があり、今後の人員増加・データ量増加にも対応可能。</li>
+          <li>Dropbox連携（Cloud Sync）が非常に強力。同期エラーがほぼ皆無で、安全なバックアップ体制を構築可能。</li>
+          <li>操作画面（DSM）が直感的で管理が非常に楽。</li>
+          <li>10年間の稼働を見越した高い耐久性とメーカーサポート。</li>
+          <li>高性能CPU・メモリ搭載で、同期処理中もフリーズや遅延が発生しない。</li>
         </ul>
       </div>
       <div class="md-box demerit-box">
@@ -490,153 +151,133 @@
         <ul>
           <li>最安モデル（案3）より初期費用が約1.1万円高い。</li>
           <li>本体とHDDが別売りのため、セットアップに技術的な手間が必要（※担当者が対応）。</li>
-          <li>多機能ゆえに最初の権限設定に工夫が必要。</li>
+          <li>多機能ゆえに、最初の同期設定や権限設定に工夫が必要。</li>
         </ul>
       </div>
       <div class="personal-opinion">
-        <strong>個人的な所見：</strong>
-        クラウド連携・長期安定運用・管理のしやすさを総合すると、弊社の業務環境に最も適合するモデルと判断。初期費用は案3より約1.1万円高いが、10年単位で考えれば十分に回収可能。ただし、クラウド連携が完全に不要で初期費用を最優先する場合は、案3の方が合理的。
+        <strong>個人的な所見：</strong>クラウド連携・長期安定運用・管理のしやすさを総合すると、弊社の業務環境に最も適合するモデルと判断。初期費用は案3より約1.1万円高いが、10年単位で考えれば十分に回収可能。特に、データ同期処理の安定性は業務効率に直結するため、この差額は妥当な投資。
       </div>
     </div>
   </div>
 
-  <!-- ── 案2: ASUSTOR AS1202T ── -->
+  <!-- 案2: ASUSTOR AS1202T -->
   <div class="card cloud">
-    <div class="card-header">
-      案2：ASUSTOR AS1202T
-      <span class="badge">準推奨</span>
-    </div>
+    <div class="card-header">案2：ASUSTOR AS1202T<span class="badge">準推奨</span></div>
     <div class="card-body">
       <table class="info-table">
-        <tr><th>総予算</th><td>約 42,000円（本体 32,000円 ＋ HDD 1TB×2基 10,000円）</td></tr>
-        <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（4コア） / 1GB DDR4</td></tr>
+        <tr><th>総予算</th><td>約 42,000〜52,000円（本体 32,000円 ＋ HDD 1TB×2基 10,000〜20,000円）</td></tr>
+        <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（1.7GHz/4コア）/ 1GB DDR4</td></tr>
         <tr><th>インターフェース</th><td>2.5Gbps LAN / USB 3.2 ×2</td></tr>
+        <tr><th>RAID構成</th><td>RAID 1（ミラーリング）― 1基故障でもデータは安全</td></tr>
         <tr><th>Dropbox連携</th><td><strong>DataSync Center ― Dropboxとの2方向同期に対応</strong></td></tr>
-        <tr><th>発売時期</th><td>2023年〜（最新モデル）</td></tr>
-        <tr><th>メーカー保証</th><td>3年（業界最長クラス）</td></tr>
+        <tr><th>発売時期 / 保証</th><td>2023年〜（最新モデル）/ メーカー3年保証（業界最長）</td></tr>
       </table>
-
       <div class="md-box merit-box">
         <h4>メリット</h4>
         <ul>
           <li>メーカー3年保証。Synology（2年）やBuffalo（1年）より長く、故障時の安心感が最大。</li>
-          <li>高性能CPU & 2.5GbE対応で、データの読み書きがSynology DS223jよりも高速。</li>
-          <li>DataSync Centerにより、Dropboxとの2方向同期に対応。安定したバックアップが可能。</li>
-          <li>省電力設計で運用コスト（電気代）が非常に低く、24時間稼働に最適。</li>
+          <li>RAID 1による冗長性：2本のHDDに同じデータを同時に書き込み、1基故障でもデータは安全。</li>
+          <li>2.5GbE対応で、データ転送速度が速くバックアップ時間を短縮可能。</li>
+          <li>省電力設計で24時間稼働に最適。</li>
         </ul>
       </div>
       <div class="md-box demerit-box">
         <h4>デメリット</h4>
         <ul>
           <li>Buffalo等の安価なモデルより約1.5万円高い。</li>
-          <li>本体とHDDが別売りのため、組み立てとOS設定が必要（※担当者が対応）。</li>
-          <li>日本国内ではSynologyほど知名度がなく、情報・ユーザーコミュニティが少ない。</li>
+          <li>本体とHDDが別売りのため、組み立てとOS設定が必要。</li>
+          <li>日本国内ではSynologyほど知名度が高くなく、トラブル時の情報が少ない。</li>
+          <li>案1（Synology）と比較すると管理画面の直感性でやや劣る。</li>
         </ul>
       </div>
       <div class="personal-opinion">
-        <strong>個人的な所見：</strong>
-        3年保証と2.5GbE高速通信は魅力的で、大容量ファイル転送が多い業務には適合する。ただし、日本国内での情報量・ユーザーコミュニティがSynologyより少ないため、トラブル時の対応に不安が残る。案1と比較すると管理画面の使いやすさでやや劣る。
+        <strong>個人的な所見：</strong>3年保証と2.5GbE高速通信は魅力的で、大容量ファイル転送が多い業務には適合する。ただし、日本国内での情報量・ユーザーコミュニティがSynologyより少ないため、トラブル時の対応に不安が残る。案1と比較すると管理画面の使いやすさでやや劣る。
       </div>
     </div>
   </div>
 </div>
 
-<!-- ======================================================================= -->
-<!-- ============= カテゴリB：クラウド非対応モデル ============= -->
-<!-- ======================================================================= -->
+<!-- カテゴリB：クラウド非対応モデル -->
 <div class="section page-break">
   <div class="proposal-group-title group-nocloud">
     【カテゴリB】クラウド非対応モデル ― 社内LAN専用・低コスト重視
   </div>
 
-  <!-- ── 案3: Buffalo LS220D ── -->
+  <!-- 案3: Buffalo LS220D -->
   <div class="card nocloud">
-    <div class="card-header">
-      案3：Buffalo LS220D（4TB）
-      <span class="badge">コスト最安</span>
-    </div>
+    <div class="card-header">案3：Buffalo LS220D（4TB）<span class="badge">コスト最安</span></div>
     <div class="card-body">
       <table class="info-table">
         <tr><th>総予算</th><td>約 34,800円（本体・HDD一体型モデル 4TB）</td></tr>
-        <tr><th>CPU / メモリ</th><td>Realtek RTD1296（4コア 1.4GHz） / 256MB DDR3</td></tr>
+        <tr><th>CPU / メモリ</th><td>800MHz（1コア）/ 256MB DDR3 ― 現行機と同等</td></tr>
         <tr><th>インターフェース</th><td>1Gbps LAN / USB 2.0 ×1</td></tr>
+        <tr><th>RAID構成</th><td>RAID 1（ミラーリング）対応 ― 最低限のデータ保護</td></tr>
         <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">非常に不安定 ― 同期エラー頻発、再起動が必要な場合あり</span></td></tr>
-        <tr><th>発売時期</th><td>2018年頃（設計は2014年ベース）</td></tr>
-        <tr><th>メーカー保証</th><td>1年</td></tr>
+        <tr><th>発売時期 / 保証</th><td>2018年頃（設計は2014年ベース）/ メーカー1年保証</td></tr>
       </table>
-
       <div class="md-box merit-box">
         <h4>メリット</h4>
         <ul>
-          <li>初期コストが圧倒的に安い（約34,800円）。予算を最小限に抑えられる。</li>
-          <li>HDD内蔵のため購入後の組み立てが不要。箱から出してすぐ使える。</li>
-          <li>設定がシンプルで、初心者でも導入が容易。専門知識が不要。</li>
-          <li>現行機（Buffalo）と同シリーズのため、操作感がほぼ同じで移行がスムーズ。</li>
+          <li>初期コストが圧倒的に安い。</li>
+          <li>HDD内蔵のため購入後の組み立てが不要。</li>
+          <li>RAID 1（ミラーリング）対応：最低限のデータ保護機能を保持。</li>
+          <li>設定がシンプルで、初心者でも導入が容易。</li>
         </ul>
       </div>
       <div class="md-box demerit-box">
         <h4>デメリット</h4>
         <ul>
-          <li>Dropbox連携が不安定。頻繁に同期エラーが発生し、クラウドバックアップとして信頼できない。</li>
-          <li>CPU性能が低く、メモリも256MBのため、8人同時アクセスでフリーズの懸念が大きい。</li>
-          <li>設計が2014年ベースのため、現行機と性能差が小さく、数年で再び老朽化する可能性。</li>
-          <li>外部からのアクセス機能が弱く、外出先での利便性が低い。</li>
-          <li>保証期間が1年と短い。生産終了に伴い部品調達・修理対応が困難になるリスク。</li>
+          <li>Dropbox連携が不安定：頻繁に同期エラーが発生するリスク。</li>
+          <li>動作の遅延：メモリが少ないため、同期処理中にフリーズの懸念。</li>
+          <li>長期利用に不安：10年前の旧機と性能が大差なく、数年で寿命が来る可能性。</li>
+          <li>外出先からのアクセス機能が弱く、利便性が低い。</li>
         </ul>
       </div>
       <div class="personal-opinion">
-        <strong>個人的な所見：</strong>
-        クラウド連携が不要で初期費用を最優先するなら合理的な選択肢。セットアップ不要・現行機と同じ操作感という点は大きなメリット。しかし、設計が2014年ベースと古く、8名同時アクセスでのフリーズ懸念・保証1年・数年後の再購入リスクを考えると、弊社の長期的な業務環境には適合しにくいと判断。
+        <strong>個人的な所見：</strong>クラウド連携が不要で初期費用を最優先するなら合理的な選択肢。セットアップ不要・現行機と同じ操作感は大きなメリット。しかし、設計が2014年ベースと古く、メモリ容量不足による「同期処理中のフリーズ」の懸念・保証1年・数年後の再購入リスクを考えると、弊社の長期的な業務環境には適合しにくいと判断。
       </div>
     </div>
   </div>
 
-  <!-- ── 案4: Buffalo LS720D/N ── -->
+  <!-- 案4: Buffalo LS720D/N -->
   <div class="card nocloud">
-    <div class="card-header">
-      案4：Buffalo LS720D/N（4TB）
-      <span class="badge">参考</span>
-    </div>
+    <div class="card-header">案4：Buffalo LS720D/N（4TB）<span class="badge">参考</span></div>
     <div class="card-body">
       <table class="info-table">
         <tr><th>総予算</th><td>約 44,880円（本体・HDD一体型モデル 4TB）</td></tr>
-        <tr><th>CPU / メモリ</th><td>Realtek RTD1296（4コア 1.4GHz） / 1GB DDR4</td></tr>
+        <tr><th>CPU / メモリ</th><td>Realtek RTD1296（1.4GHz/4コア）/ 1GB DDR4</td></tr>
         <tr><th>インターフェース</th><td>2.5Gbps LAN / USB 3.2 ×2</td></tr>
-        <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">不安定・機能制限あり ― Synologyに比べ設定が複雑で同期ミスが多い</span></td></tr>
-        <tr><th>発売時期</th><td>2021年頃</td></tr>
-        <tr><th>メーカー保証</th><td>1年</td></tr>
+        <tr><th>RAID構成</th><td>RAID 1（ミラーリング）対応 ― 最低限のデータ保護</td></tr>
+        <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">不安定・機能制限あり ― 設定が複雑で同期ミスが多い</span></td></tr>
+        <tr><th>発売時期 / 保証</th><td>2021年頃 / メーカー1年保証</td></tr>
       </table>
-
       <div class="md-box merit-box">
         <h4>メリット</h4>
         <ul>
-          <li>2.5GbE対応で、PCとの通信速度が高速。大容量ファイル転送に強い。</li>
-          <li>データのバックアップ時間を短縮可能。</li>
-          <li>1GBメモリ搭載で、案3よりも複数人アクセス時の安定性が高い。</li>
-          <li>HDD内蔵型のため組み立て不要。</li>
+          <li>2.5GbE対応で、PCとの通信速度が速い。</li>
+          <li>RAID 1（ミラーリング）対応：最低限のデータ保護機能を保持。</li>
+          <li>高性能CPU搭載で、ファイルの展開がスムーズ。</li>
         </ul>
       </div>
       <div class="md-box demerit-box">
         <h4>デメリット</h4>
         <ul>
+          <li>過剰性能（オーバースペック）：弊社の文書中心の業務には速度が速すぎ、コストが割高。</li>
           <li>Dropbox連携の不安定さ：Buffalo機共通の弱点としてクラウド連携が弱い。</li>
-          <li>Synologyのような直感的な管理画面や高度な管理機能がない。</li>
-          <li>案1（DS223j）とほぼ同価格帯でありながら、クラウド連携では大幅に劣る。</li>
-          <li>保証期間が1年と短い。</li>
+          <li>案1（DS223j）のような直感的な管理画面や高度な管理機能がない。</li>
         </ul>
       </div>
       <div class="personal-opinion">
-        <strong>個人的な所見：</strong>
-        2.5GbE高速通信は動画・CAD等の大容量ファイルを扱う業務には有効だが、弊社は文書中心のため速度差を体感しにくい。案1（DS223j）とほぼ同価格帯でありながらクラウド連携が弱いため、同じ予算を使うなら案1の方が将来性で優れると判断。
+        <strong>個人的な所見：</strong>2.5GbE高速通信は動画・CAD等の大容量ファイルを扱う業務には有効だが、弊社は文書中心のため速度差を体感しにくい。案1（DS223j）とほぼ同価格帯でありながらクラウド連携が弱いため、同じ予算を使うなら案1の方が将来性で優れると判断。
       </div>
     </div>
   </div>
 </div>
 
-<!-- ========================= 3. 比較一覧表 ========================= -->
+<!-- 3. 比較一覧表 -->
 <div class="section">
   <div class="section-title">3. 4案の比較一覧</div>
-  <p class="section-desc">※現在人気のあるNASモデルのトップ10の評価を参考にしています。（<a href="https://www.monohikaku-jp.com/nas?targetid=kwd-84320187789500:loc-96&matchtype=p&device=c&campaignid=533165296&creative=&adgroupid=1349103450997937&feeditemid=&loc_physical_ms=139822&loc_interest_ms=&network=o&devicemodel=&placement=&keyword=$nas&target=&aceid=%7Baceid%7D&adposition=&trackid=jp_all_top_bing&mId=H149003CQN&msclkid=15c0c3ea6b321339b5afaa5daef90303" target="_blank" style="color:#2c3e50;">参考リンク：NASモデル比較サイト</a>）</p>
+  <p class="section-desc">※現在人気のあるNASモデルのトップ10の評価を参考にしています。（<a href="https://www.monohikaku-jp.com/nas" target="_blank" style="color:#2c3e50;">参考リンク：NASモデル比較サイト</a>）</p>
   <table class="compare-table">
     <thead>
       <tr>
@@ -648,92 +289,26 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><strong>カテゴリ</strong></td>
-        <td class="highlight">クラウド対応</td>
-        <td class="highlight">クラウド対応</td>
-        <td>クラウド非対応</td>
-        <td>クラウド非対応</td>
-      </tr>
-      <tr>
-        <td><strong>総予算</strong></td>
-        <td>約46,000円</td>
-        <td>約42,000円</td>
-        <td>約34,800円</td>
-        <td>約44,880円</td>
-      </tr>
-      <tr>
-        <td><strong>月額費用</strong></td>
-        <td>0円</td>
-        <td>0円</td>
-        <td>0円</td>
-        <td>0円</td>
-      </tr>
-      <tr>
-        <td><strong>Dropbox連携</strong></td>
-        <td class="highlight">◎ 非常に安定</td>
-        <td class="highlight">○ 安定</td>
-        <td>✗ 不安定</td>
-        <td>△ 不安定</td>
-      </tr>
-      <tr>
-        <td><strong>8名同時利用</strong></td>
-        <td class="highlight">◎ 余裕あり</td>
-        <td>◎ 余裕あり</td>
-        <td>✗ フリーズ懸念</td>
-        <td>○ 対応可</td>
-      </tr>
-      <tr>
-        <td><strong>管理画面</strong></td>
-        <td class="highlight">◎ 直感的</td>
-        <td>○ やや専門的</td>
-        <td>○ シンプル</td>
-        <td>○ シンプル</td>
-      </tr>
-      <tr>
-        <td><strong>メーカー保証</strong></td>
-        <td>2年</td>
-        <td class="highlight">3年</td>
-        <td>1年</td>
-        <td>1年</td>
-      </tr>
-      <tr>
-        <td><strong>長期運用（10年）</strong></td>
-        <td class="highlight">◎ 最適</td>
-        <td>○ 適切</td>
-        <td>✗ 不向き</td>
-        <td>△ やや不安</td>
-      </tr>
-      <tr>
-        <td><strong>セットアップ</strong></td>
-        <td>組立必要</td>
-        <td>組立必要</td>
-        <td>不要（一体型）</td>
-        <td>不要（一体型）</td>
-      </tr>
-      <tr>
-        <td><strong>将来の再購入リスク</strong></td>
-        <td class="highlight">低い</td>
-        <td class="highlight">低い</td>
-        <td>高い（設計が古い）</td>
-        <td>中程度</td>
-      </tr>
+      <tr><td><strong>カテゴリ</strong></td><td class="highlight">クラウド対応</td><td class="highlight">クラウド対応</td><td>クラウド非対応</td><td>クラウド非対応</td></tr>
+      <tr><td><strong>総予算</strong></td><td>約46,000〜56,000円</td><td>約42,000〜52,000円</td><td>約34,800円</td><td>約44,880円</td></tr>
+      <tr><td><strong>月額費用</strong></td><td>0円</td><td>0円</td><td>0円</td><td>0円</td></tr>
+      <tr><td><strong>RAID 1</strong></td><td class="highlight">◎ 対応</td><td class="highlight">◎ 対応</td><td>○ 対応</td><td>○ 対応</td></tr>
+      <tr><td><strong>Dropbox連携</strong></td><td class="highlight">◎ 非常に安定</td><td class="highlight">○ 安定</td><td>✗ 不安定</td><td>△ 不安定</td></tr>
+      <tr><td><strong>管理画面</strong></td><td class="highlight">◎ 直感的</td><td>○ やや専門的</td><td>○ シンプル</td><td>○ シンプル</td></tr>
+      <tr><td><strong>メーカー保証</strong></td><td>2年</td><td class="highlight">3年</td><td>1年</td><td>1年</td></tr>
+      <tr><td><strong>長期運用（10年）</strong></td><td class="highlight">◎ 最適</td><td>○ 適切</td><td>✗ 不向き</td><td>△ やや不安</td></tr>
+      <tr><td><strong>将来の再購入リスク</strong></td><td class="highlight">低い</td><td class="highlight">低い</td><td>高い（設計が古い）</td><td>中程度</td></tr>
     </tbody>
   </table>
 </div>
 
-<!-- ========================= 4. バックアッププラン ========================= -->
+<!-- 4. バックアッププラン -->
 <div class="section">
   <div class="section-title">4. バックアッププラン</div>
   <p class="section-desc">「新NAS ＋ 旧NAS ＋ クラウド」の組み合わせによる安全性の違い</p>
   <table class="backup-table">
     <thead>
-      <tr>
-        <th>プラン</th>
-        <th>内容</th>
-        <th>月額費用</th>
-        <th>特徴</th>
-      </tr>
+      <tr><th>プラン</th><th>内容</th><th>月額費用</th><th>特徴</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -745,103 +320,75 @@
       <tr>
         <td>案B：安全性重視</td>
         <td>新NAS ＋ Dropbox</td>
-        <td style="text-align:center;">2,000円</td>
-        <td>BCP対策（災害対策）。オフィス外からもアクセス可能。</td>
-      </tr>
-      <tr>
-        <td>案C：併用プラン</td>
-        <td>新NAS ＋ 旧NAS ＋ Dropbox</td>
         <td style="text-align:center;">1,200円〜</td>
-        <td>重要データのみDropboxへ、全データは旧NASへ。<strong>最もバランスが良い。</strong></td>
+        <td>BCP対策（災害対策）。オフィス外からもアクセス可能。</td>
       </tr>
     </tbody>
   </table>
+
   <div class="reason-box">
     <strong>運用方針：</strong>まずは<strong>案A（初期費用のみ、月額0円）</strong>で運用を開始。
     新機をメイン、旧機をバックアップ専用として再利用。将来的に必要があれば、いつでもDropbox連携（月額1,200円〜）を追加可能。
   </div>
 
   <div class="personal-opinion" style="margin-top:14px;">
-    <strong>クラウド導入時に案B（¥2,000）ではなく案C（¥1,200〜）を推奨する理由：</strong><br><br>
-    <strong>1. 容量の壁：</strong>現在のNASが2TBであるため、Professionalプラン（¥2,000/月・3TB）でも全データのバックアップには容量不足になるリスクがある。案Cでは重要データのみをクラウドに同期するため、Plusプラン（¥1,200/月・2TB）で十分に対応可能。<br><br>
-    <strong>2. 通信負荷の軽減：</strong>全データではなく重要データのみをCloudへ同期する「案C」を採用することで、通信負荷を抑えつつ効率的にバックアップを運用できる。全データは旧NASにバックアップするため、二重の保護を実現。<br><br>
-    <strong>3. コスト最適化：</strong>毎月の固定費を¥1,200に抑えることで、年間で約¥9,600のコスト削減になる（案Bとの差額）。容量不足になった段階で上位プランへ移行するのが最も経済的。
+    <strong>※Dropboxプランの選定理由 ― なぜ Professional（¥2,000）ではなく Plus（¥1,200）を推奨するのか</strong><br><br>
+    <strong>1. 容量の妥当性：</strong>現在のNASが2TBであるため、Plusプラン（2TB）で十分。Professionalプラン（3TB）の追加容量は現時点では不要。<br><br>
+    <strong>2. 機能の最適化：</strong>Professionalプランにある高度な共有管理機能や復元機能は、大分事務所の現在の運用（個人のデータ集約）には過剰。Plusプランの基本機能だけでバックアップ目的は完全に達成可能。<br><br>
+    <strong>3. コスト最適化：</strong>月額800円、年間で9,600円の固定費を削減できる。将来的にデータ量が2TBを超えた段階で上位プランへ移行するのが、最も合理的で無駄のない判断。
   </div>
 </div>
 
-<!-- ========================= 5. 導入スケジュール ========================= -->
+<!-- 5. 導入スケジュール -->
 <div class="section">
   <div class="section-title">5. 導入スケジュール（案1：DS223jの場合）</div>
   <table class="schedule-table">
     <thead>
-      <tr>
-        <th style="width:150px;">日程</th>
-        <th style="width:160px;">作業工程</th>
-        <th>作業内容</th>
-      </tr>
+      <tr><th style="width:120px;">日程</th><th style="width:180px;">作業工程</th><th>作業内容</th></tr>
     </thead>
     <tbody>
       <tr>
-        <td>1日目（平日）</td>
+        <td>1日目</td>
         <td>商品発注</td>
-        <td>NAS本体（DS223j）とHDD（1TB×2）を発注。</td>
+        <td>NAS本体（DS223j）とNAS専用HDD（1TB×2基）を発注。</td>
       </tr>
       <tr>
-        <td>2日目（平日）</td>
-        <td>配送待機・事前準備</td>
-        <td>到着を待つ間に、現行ユーザー（8名）の権限設定を再確認。旧NASの全データ一覧を整理。</td>
+        <td>2日目</td>
+        <td>事前セットアップ</td>
+        <td>到着したHDDを装着し、RAID 1（ミラーリング）を構築。OSインストールと初期設定を完了。</td>
       </tr>
       <tr>
-        <td>3日目（金曜夜）</td>
-        <td>初期設定・データ移行開始</td>
-        <td>HDD装着、DSM（OS）インストール。旧NASから新NASへデータ（271GB）のコピーを開始。</td>
+        <td>3日目</td>
+        <td>一次データコピー</td>
+        <td>旧機から新機へ全データ（約271GB）のコピーを開始。※旧機は通常通り稼働。業務への影響なし。</td>
       </tr>
       <tr>
-        <td>4日目（土曜）</td>
-        <td>データ移行完了確認</td>
-        <td>新NASへのデータコピー完了を確認。フォルダ構成・ファイル数の整合性チェック。</td>
+        <td>4日目</td>
+        <td>整合性確認</td>
+        <td>データコピーの完了を確認。フォルダ構成やファイル数の整合性をチェック。</td>
       </tr>
       <tr>
-        <td>4日目（土曜〜日曜）</td>
-        <td>旧NASバックアップ設定</td>
-        <td>
-          <strong>旧NASをバックアップ専用機として再構築。</strong><br>
-          ・旧NASのデータを初期化し、バックアップ受信専用として再設定。<br>
-          ・新NAS → 旧NASへの<strong>定期自動バックアップ</strong>（Hyper Backup）を設定。<br>
-          ・バックアップスケジュール：毎日深夜（例：AM 2:00）に差分バックアップを自動実行。<br>
-          ・これにより、新NASが故障した場合でも旧NASから即座にデータ復旧が可能。
-        </td>
+        <td>4日目</td>
+        <td>【システム停止】最終差分同期</td>
+        <td>共有フォルダへの書き込みを一時停止。最終的な「差分コピー」を実行し、数日間に更新されたファイルのみを同期（短時間で完了）。</td>
       </tr>
       <tr>
-        <td>4日目（日曜）</td>
-        <td>権限設定・ネットワーク切替</td>
-        <td>Cloud Syncの設定（将来用）、フォルダアクセス権限の設定。旧機を停止し、新機に旧機のIPアドレスを継承。</td>
+        <td>4日目</td>
+        <td>ネットワーク切替</td>
+        <td>旧機のIPアドレスを新機へ承継。各PCからの接続確認を実施し、運用開始。</td>
       </tr>
       <tr>
-        <td>5日目（月曜朝）</td>
-        <td>運用開始・動作確認</td>
-        <td>
-          社員は通常通り業務開始（NASのIPアドレスが同じため、PC側の設定変更は不要）。<br>
-          旧NASを「バックアップ専用機」として別IPで再起動。<br>
-          <strong>新NAS → 旧NASへの自動バックアップが正常に動作していることを確認。</strong>
-        </td>
-      </tr>
-      <tr>
-        <td>1週間後</td>
-        <td>安定稼働確認</td>
-        <td>
-          1週間の運用ログを確認。バックアップの成功履歴を確認。<br>
-          問題がなければ、旧NASのバックアップ運用を本格稼働として確定。
-        </td>
+        <td>5日目</td>
+        <td>旧NASの再構築</td>
+        <td>旧機を初期化し、新NASのバックアップ専用機として再設定。深夜帯の自動バックアップをスケジュール。</td>
       </tr>
       <tr>
         <td>将来的に</td>
         <td>クラウド連携追加</td>
-        <td>運用状況を見て、Dropboxへの重要データ同期（案C）を検討・最適化。</td>
+        <td>運用状況を見て、Dropboxへの重要データ同期（案B）を検討・最適化。</td>
       </tr>
     </tbody>
   </table>
-
   <div class="reason-box" style="margin-top:14px;">
     <strong>旧NASバックアップのポイント：</strong>
     旧NASは廃棄せず、<strong>「社内バックアップ専用機」</strong>として再利用します。
@@ -850,6 +397,56 @@
   </div>
 </div>
 
+<!-- 6. 調査結果に基づく個人提案 -->
+<div class="section">
+  <div class="section-title">6. 調査結果に基づく個人提案</div>
+  <div class="opinion-box">
+    <h3>結論：Synology DS223j（案1）の導入を推奨</h3>
+
+    <ol style="padding-left:20px; margin-bottom:16px;">
+      <li style="padding:5px 0;"><strong>老朽化に伴う物理故障と業務停止リスクの解消</strong><br>
+        現行機は導入から12年が経過し、耐用年数を大幅に超過。HDD 2基によるRAID 1（ミラーリング）構成を維持しつつ刷新することで、突然の故障によるデータ消失リスクを根本から排除。</li>
+      <li style="padding:5px 0;"><strong>RAID 1（ミラーリング）によるデータの二重保護</strong><br>
+        2本のHDDに同じデータを同時に書き込むRAID 1を設定。万一1本のHDDが故障しても、もう一方のHDDで業務を止めることなく継続・復旧が可能。</li>
+      <li style="padding:5px 0;"><strong>Dropbox同期処理の安定化</strong><br>
+        現行機のメモリ不足（256MB）を1GB（4倍）に強化することで、バックグラウンドでのDropbox同期エラーを解消し、データ集約時の処理を安定させる。</li>
+      <li style="padding:5px 0;"><strong>旧NASの有効活用による二重バックアップ</strong><br>
+        旧機を廃棄せず「バックアップ専用機」として再利用。新NASのデータを毎日自動バックアップすることで、追加費用0円でより強固なデータ保護体制を実現。</li>
+      <li style="padding:5px 0;"><strong>将来的な再購入リスクの回避とコスト最適化</strong><br>
+        安価な旧世代モデル（設計が2014年ベースのもの）は数年で性能不足に陥るリスクがある。DS223jなら10年以上の安定運用が見込まれ、中長期的なトータルコストを抑えられる。</li>
+    </ol>
+
+    <div style="border-top:1px solid #ddd; padding-top:12px; margin-top:8px;">
+      <div style="font-size:15px; font-weight:600; color:#1a3a5c; margin-bottom:10px;">上記結論に至った背景：</div>
+    </div>
+
+    <div class="point">
+      <strong>「中長期的な視点」でのコスト最適化：</strong>
+      安価な旧世代モデル（Buffalo LS220D等）は、数年以内に再び老朽化・性能不足に陥る可能性が高く、結果的に短期間での再購入が必要となります。DS223jへの一度の投資で、長期的な安定稼働を確保できます。
+    </div>
+
+    <div class="point">
+      <strong>RAID 1による事業継続性：</strong>
+      本提案の核心は、2本のHDDを用いたミラーリング（RAID 1）です。1基の故障が即座にデータ消失に繋がらない構成を維持することは、法人用NASとして不可欠な基準です。
+    </div>
+
+    <div class="point">
+      <strong>保守・サポートの容易さ：</strong>
+      Synologyは世界シェアNo.1であり、日本語サポートやコミュニティが充実。万一のトラブル時も自力で解決しやすく、業務への影響を最小限に抑えられます。
+    </div>
+
+    <div class="point">
+      <strong>データ集約の安定性：</strong>
+      過去のデータ使用量は少ないですが、各自が随時アップロードを行う運用において、メモリ不足によるフリーズは致命的です。1GBのメモリを搭載した本機であれば、データの同期中も動作が滞ることはありません。
+    </div>
+
+    <div class="conclusion-line">
+      以上の理由から、目先の数千円〜1万円の差額よりも、<strong>「ミラーリングによる信頼性」「保守のしやすさ」「将来的なデータ増加への対応力」</strong>を重視し、Synology DS223j への投資を推奨いたします。
+      <br><br>
+      ※今回の提案の主旨は、単なる容量拡大や高速化ではなく、<strong>「現行機の物理故障リスクの排除」</strong>と<strong>「バックアップ体制の確立」</strong>にあります。
+    </div>
+  </div>
+</div>
 
 <div class="footer">
   NAS機器更新 提案書　｜　2026年3月18日作成　｜　作成者：レアントアン
