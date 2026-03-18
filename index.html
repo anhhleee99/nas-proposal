@@ -338,34 +338,60 @@
   <p class="section-desc">「新NAS ＋ 旧NAS ＋ クラウド」の組み合わせによる安全性の違い</p>
   <table class="backup-table">
     <thead>
-      <tr><th>プラン</th><th>内容</th><th>月額費用</th><th>特徴</th></tr>
+      <tr><th>プラン</th><th>内容</th><th>月額費用</th><th>メリット</th><th>デメリット</th></tr>
     </thead>
     <tbody>
       <tr>
         <td>案A：最安プラン</td>
         <td>新NAS ＋ 旧NAS</td>
         <td style="text-align:center;">0円</td>
-        <td>追加費用なし。社内LANでの高速復旧が可能。<br><span style="color:#c0392b;">※震災時の全滅リスクあり。</span></td>
+        <td>● 追加コストが一切かからない。<br>● 社内LAN経由のため高速な復旧が可能。</td>
+        <td><span style="color:#c0392b;">● 老朽化リスク：9年稼働の旧機は故障率が高い。<br>● 災害リスク：火災・震災時に全データを消失。</span></td>
       </tr>
       <tr>
         <td>案B：安全性重視</td>
         <td>新NAS ＋ Dropbox</td>
-        <td style="text-align:center;">1,200円〜</td>
-        <td>BCP対策（災害対策）。オフィス外からもアクセス可能。</td>
+        <td style="text-align:center;">¥1,200〜¥2,000</td>
+        <td>● BCP対策（災害対策）：オフィス外にデータを保護。<br>● 利便性：外部からの安全なデータアクセス。</td>
+        <td><span style="color:#c0392b;">● 継続的なランニングコストが発生する。<br>● 同期速度がオフィスの回線品質に依存する。</span></td>
       </tr>
     </tbody>
   </table>
 
   <div class="reason-box">
     <strong>運用方針：</strong>まずは<strong>案A（初期費用のみ、月額0円）</strong>で運用を開始。
-    新機をメイン、旧機をバックアップ専用として再利用。将来的に必要があれば、いつでもDropbox連携（月額1,200円〜）を追加可能。
+    新機をメイン、旧機をバックアップ用として再利用。将来的に必要があれば、いつでもDropbox連携を追加可能。
   </div>
 
-  <div class="personal-opinion" style="margin-top:14px;">
-    <strong>※Dropboxプランの選定理由 ― なぜ Professional（¥2,000）ではなく Plus（¥1,200）を推奨するのか</strong><br><br>
-    <strong>1. 容量の妥当性：</strong>現在のNASが2TBであるため、Plusプラン（2TB）で十分。Professionalプラン（3TB）の追加容量は現時点では不要。<br><br>
-    <strong>2. 機能の最適化：</strong>Professionalプランにある高度な共有管理機能や復元機能は、大分事務所の現在の運用（個人のデータ集約）には過剰。Plusプランの基本機能だけでバックアップ目的は完全に達成可能。<br><br>
-    <strong>3. コスト最適化：</strong>月額800円、年間で9,600円の固定費を削減できる。将来的にデータ量が2TBを超えた段階で上位プランへ移行するのが、最も合理的で無駄のない判断。
+  <!-- Dropboxプラン比較 -->
+  <div style="margin-top:18px;">
+    <p style="font-weight:700; color:#2c3e50; font-size:15px; margin-bottom:10px;">※Dropboxプランの選定</p>
+    <table class="compare-table" style="font-size:14px;">
+      <thead>
+        <tr>
+          <th style="width:140px;">項目</th>
+          <th style="background:#1a5276;">Plusプラン</th>
+          <th style="background:#6b5b3e;">Professionalプラン</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>月額費用</strong></td>
+          <td><strong>¥1,200/月</strong></td>
+          <td>¥2,000/月</td>
+        </tr>
+        <tr>
+          <td><strong>メリット</strong></td>
+          <td style="text-align:left;">● コスト最小限：現状のデータ量（271GB）に対して十分な容量（2TB）を安価に確保できる。<br>● 必要十分な機能：NASの外部バックアップという主目的に対して、機能不足はない。</td>
+          <td style="text-align:left;">● 高度な管理機能：誤操作によるファイル復元期間が長い（180日間）。<br>● 共有機能の充実：外部への資料送付や閲覧制限などの管理機能が強力。</td>
+        </tr>
+        <tr>
+          <td><strong>デメリット</strong></td>
+          <td style="text-align:left;">復元期間：削除したファイルの復元期間が30日間と短い（通常運用では問題なし）。</td>
+          <td style="text-align:left;"><span style="color:#c0392b;">コスト過剰（オーバースペック）：現在のデータ利用実態に対し、月額800円（年間9,600円）の追加費用が見合わない。</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
