@@ -135,7 +135,7 @@
         <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（1.7GHz/4コア）/ 1GB DDR4 ― 現行機の<strong>約4倍</strong></td></tr>
         <tr><th>インターフェース</th><td>1Gbps LAN / USB 3.2 Gen1 ×2</td></tr>
         <tr><th>RAID構成</th><td>RAID 1（ミラーリング）― 2基に同じデータを同時保存。1基故障でも業務継続可能</td></tr>
-        <tr><th>Dropbox連携</th><td><strong>Cloud Sync搭載 ― 同期エラーほぼ皆無、完全自動化</strong></td></tr>
+        <tr><th>Dropbox連携</th><td><strong>Cloud Sync（専用アプリ）搭載。</strong>Dropboxの仕様変更に自動追従するため、同期エラーがほぼ皆無。完全に放置運用が可能。</td></tr>
         <tr><th>発売時期 / 保証</th><td>2023年〜（最新モデル）/ メーカー2年保証</td></tr>
       </table>
       <div class="md-box merit-box">
@@ -172,7 +172,7 @@
         <tr><th>CPU / メモリ</th><td>Realtek RTD1619B（1.7GHz/4コア）/ 1GB DDR4</td></tr>
         <tr><th>インターフェース</th><td>2.5Gbps LAN / USB 3.2 ×2</td></tr>
         <tr><th>RAID構成</th><td>RAID 1（ミラーリング）― 1基故障でもデータは安全</td></tr>
-        <tr><th>Dropbox連携</th><td><strong>DataSync Center ― Dropboxとの2方向同期に対応</strong></td></tr>
+        <tr><th>Dropbox連携</th><td><strong>DataSync Center搭載。</strong>アプリ形式で2方向同期に対応。Synologyと同等の安定性があるが、国内のトラブル解決事例は少なめ。</td></tr>
         <tr><th>発売時期 / 保証</th><td>2023年〜（最新モデル）/ メーカー3年保証（業界最長）</td></tr>
       </table>
       <div class="md-box merit-box">
@@ -216,7 +216,7 @@
         <tr><th>CPU / メモリ</th><td>800MHz（1コア）/ 256MB DDR3 ― 現行機と同等</td></tr>
         <tr><th>インターフェース</th><td>1Gbps LAN / USB 2.0 ×1</td></tr>
         <tr><th>RAID構成</th><td>RAID 1（ミラーリング）対応 ― 最低限のデータ保護</td></tr>
-        <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">非常に不安定 ― 同期エラー頻発、再起動が必要な場合あり</span></td></tr>
+        <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">旧式の内蔵機能。Dropbox側のセキュリティ更新（API変更）に弱く、接続が頻繁に切れる。復旧には「本体の再起動」が必須。</span></td></tr>
         <tr><th>発売時期 / 保証</th><td>2018年頃（設計は2014年ベース）/ メーカー1年保証</td></tr>
       </table>
       <div class="md-box merit-box">
@@ -253,7 +253,7 @@
         <tr><th>CPU / メモリ</th><td>Realtek RTD1296（1.4GHz/4コア）/ 1GB DDR4</td></tr>
         <tr><th>インターフェース</th><td>2.5Gbps LAN / USB 3.2 ×2</td></tr>
         <tr><th>RAID構成</th><td>RAID 1（ミラーリング）対応 ― 最低限のデータ保護</td></tr>
-        <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">不安定・機能制限あり ― 設定が複雑で同期ミスが多い</span></td></tr>
+        <tr><th>Dropbox連携</th><td><span style="color:#c0392b;">内蔵機能の限界。設定が複雑で同期ミスが発生しやすい。Synologyのような「アプリ単体更新」ができないため、長期的な安定性に欠ける。</span></td></tr>
         <tr><th>発売時期 / 保証</th><td>2021年頃 / メーカー1年保証</td></tr>
       </table>
       <div class="md-box merit-box">
@@ -439,27 +439,41 @@
       <tr>
         <td>1日目</td>
         <td>新NASセットアップ</td>
-        <td>ネットワーク設定、RAID 1（ミラーリング）の構築。<span style="color:#27ae60;">システム停止なし。</span></td>
+        <td><strong>【実作業：約3時間】</strong><br>
+          ● HDD物理装着、RAID 1構築、OS初期化。<br>
+          ● ネットワーク固定IP設定、共有フォルダ作成。<br>
+          <span style="color:#27ae60;">※新機単体の作業。業務影響なし。</span></td>
       </tr>
       <tr>
         <td>2日目</td>
         <td>データ移行（初期コピー）</td>
-        <td>旧NASから新NASへ全データをコピー。業務は通常通り可能。<span style="color:#27ae60;">停止なし。</span></td>
+        <td><strong>【実作業：30分 / 処理：約6時間】</strong><br>
+          ● 旧機から新機へ全データ（271GB）の同期をバックグラウンドで開始。<br>
+          ● 業務は通常通り継続。終業までに同期の進捗を確認。<br>
+          <span style="color:#27ae60;">※停止なし。</span></td>
       </tr>
       <tr>
         <td>3日目</td>
-        <td>移行データの整合性確認</td>
-        <td>コピーされたデータの確認、アクセス権限の設定。<span style="color:#27ae60;">システム停止なし。</span></td>
+        <td>整合性確認・接続準備</td>
+        <td><strong>【実作業：約1.5時間】</strong><br>
+          ● コピーされたデータのファイル数・容量の照合。<br>
+          ● 各PCの接続ショートカット作成、アクセス権限確認。<br>
+          <span style="color:#27ae60;">※確認作業のみ。システム停止なし。</span></td>
       </tr>
       <tr style="background:#fdf2f2;">
         <td>4日目</td>
         <td><strong>最終差分同期・切り替え</strong></td>
-        <td><span style="color:#c0392b; font-weight:600;">【重要】システム停止：最大4時間。</span>業務終了後（夕方以降）に実施し、翌朝までに切替完了。</td>
+        <td><strong>【実作業：2時間 / <span style="color:#c0392b;">システム停止：最大4時間</span>】</strong><br>
+          ● 退勤時に実施。数日間で更新された差分のみ同期。<br>
+          ● 旧NASのIPアドレスを新NASへ承継し、切替完了。</td>
       </tr>
       <tr>
         <td>5日目</td>
-        <td>運用開始・旧機設定</td>
-        <td>職員への接続確認。旧NASをバックアップ機として再設定。<span style="color:#27ae60;">システム停止なし。</span></td>
+        <td>旧NAS再構築・運用開始</td>
+        <td><strong>【実作業：約1時間】</strong><br>
+          ● 運用開始後の動作確認。<br>
+          ● 旧NASを初期化し、バックアップ専用機として再設定。<br>
+          <span style="color:#27ae60;">※システム停止なし。</span></td>
       </tr>
       <tr>
         <td>将来的に</td>
@@ -478,23 +492,36 @@
     <tbody>
       <tr>
         <td>1日目（午前）</td>
-        <td>初期セットアップ<br><small>1. HDD装着・RAID 1構築<br>2. OS設定・権限設定</small></td>
-        <td>実作業：約2時間。NAS単体の設定のため、<span style="color:#27ae60;">業務への影響なし。</span></td>
+        <td>機材セットアップ<br><small>1. HDD物理装着（2基）<br>2. RAID 1構築・OS初期化</small></td>
+        <td><strong>【実作業：計3時間】</strong><br>
+          ● 物理作業（30分）：NAS本体の開封、HDD（2基）の装着、配線。<br>
+          ● システム初期化（60分）：OSインストール、RAID 1構築開始。<br>
+          ● 初期設定（90分）：ネットワーク固定IP設定、ユーザー権限・共有フォルダ作成。<br>
+          <span style="color:#27ae60;">※新NAS単体作業のため、既存業務への影響なし。</span></td>
       </tr>
       <tr>
         <td>1日目（午後）</td>
-        <td>最終差分同期・切り替え<br><small>1. 差分コピーを実行<br>2. IPアドレス・共有設定の引継ぎ</small></td>
-        <td>共有設定やユーザー権限の最終チェック。<span style="color:#27ae60;">業務は通常通り継続可能。</span></td>
+        <td>一次データコピー<br><small>（バックグラウンド実行）</small></td>
+        <td><strong>【実作業：15分（設定のみ）/ 処理：約4時間】</strong><br>
+          ● 旧NASから新NASへ全データ（270GB）の同期をバックグラウンドで開始。<br>
+          ● 旧NASは通常稼働を継続。職員は普段通りNASを利用可能。<br>
+          <span style="color:#27ae60;">※ネットワーク負荷を抑えるため、転送速度を制限して実行。</span></td>
       </tr>
       <tr style="background:#fdf2f2;">
         <td>1日目（退勤時）</td>
-        <td><strong>旧機再構築・バックアップ設定</strong><br><small>1. 旧機を初期化<br>2. 夜間バックアップ実装</small></td>
-        <td><span style="color:#c0392b; font-weight:600;">【システム停止】</span>全員退勤後に切替開始。夜間に自動処理を行い、業務への影響を排除。</td>
+        <td><strong>最終差分同期・切り替え作業</strong></td>
+        <td><strong>【実作業：計2時間 / <span style="color:#c0392b;">システム停止：最大4時間</span>】</strong><br>
+          ● 差分同期（30分）：午後の業務で更新されたデータのみを最終同期。<br>
+          ● 切替（30分）：旧NASのIPアドレスを新NASへ継承、接続設定変更。<br>
+          ● 予備（60分）：接続テスト、トラブル対応用バッファ。<br>
+          <span style="color:#c0392b; font-weight:600;">※全員退勤後に実施するため、業務への支障なし。</span></td>
       </tr>
       <tr>
         <td>2日目</td>
-        <td>動作確認・運用開始</td>
-        <td>出勤直後に各PCからの接続を確認。旧NASをバックアップ機として再設定。</td>
+        <td>運用開始・旧機再構築</td>
+        <td><strong>【実作業：計1時間】</strong><br>
+          ● 各PCからの接続・動作確認。<br>
+          ● 旧NASを初期化し、バックアップ専用機として再設定（2重化の開始）。</td>
       </tr>
       <tr>
         <td>将来的に</td>
